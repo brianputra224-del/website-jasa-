@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SANZSTORE - Jasa Digital</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #050816;
+            color: white;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(5, 8, 22, 0.95);
+            border-bottom: 1px solid #1d2945;
+        }
+
+        nav {
+            max-width: 1100px;
+            margin: auto;
+            padding: 18px 25px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            margin-right: auto;
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #1683ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #1683ff;
+        }
+
+        .hero {
+            min-height: 620px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+
+            background:
+                radial-gradient(
+                    circle at center,
+                    #123b6b 0%,
+                    #050816 55%
+                );
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .tag {
+            color: #1683ff;
+            letter-spacing: 5px;
+            font-size: 13px;
+            margin-bottom: 22px;
+        }
+
+        h1 {
+            font-size: clamp(42px, 8vw, 75px);
+            line-height: 1.05;
+            margin-bottom: 25px;
+        }
+
+        h1 span {
+            color: #1683ff;
+        }
+
+        .hero p {
+            color: #aab5c7;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 35px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 28px;
+            background: #1683ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+            background: #3d9cff;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 90px 25px;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .title h2 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .title p {
+            color: #8f9caf;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: #0b1224;
+            border: 1px solid #1d2945;
+            border-radius: 18px;
+            padding: 30px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #1683ff;
+        }
+
+        .icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            font-size: 23px;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #9da9bd;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            color: #1683ff;
+            font-weight: bold;
+        }
+
+        .about {
+            text-align: center;
+        }
+
+        .about-box {
+            background: #0b1224;
+            border: 1px solid #1d2945;
+            border-radius: 20px;
+            padding: 40px;
+        }
+
+        .about-box p {
+            color: #aab5c7;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        .contact {
+            text-align: center;
+            background: #080e1d;
+            border-radius: 25px;
+        }
+
+        .contact p {
+            color: #aab5c7;
+            margin: 15px 0 30px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #1d2945;
+            color: #718096;
+        }
+
+        @media (max-width: 700px) {
+
+            nav a {
+                margin-left: 10px;
+                font-size: 12px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                min-height: 550px;
+            }
+
+            .about-box {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+
+            <div class="logo">
+                SANZ<span>STORE</span>
+            </div>
+
+            <a href="#jasa">Jasa</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#kontak">Kontak</a>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="tag">
+                    DIGITAL SERVICE
+                </div>
+
+                <h1>
+                    Bikin Bisnis Kamu
+                    <span>Lebih Profesional.</span>
+                </h1>
+
+                <p>
+                    Kami menyediakan berbagai jasa digital
+                    untuk membantu kebutuhan online kamu.
+                </p>
+
+                <a class="button" href="#jasa">
+                    Lihat Jasa
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section id="jasa">
+
+            <div class="title">
+
+                <h2>Jasa Kami</h2>
+
+                <p>
+                    Pilih layanan yang kamu butuhkan
+                </p>
+
+            </div>
+
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <div class="icon">🌐</div>
+
+                    <h3>Website</h3>
+
+                    <p>
+                        Website sederhana dan profesional
+                        untuk bisnis, komunitas, atau kebutuhan pribadi.
+                    </p>
+
+                    <div class="price">
+                        Mulai Rp50.000
+                    </div>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="icon">🎬</div>
+
+                    <h3>Edit Video</h3>
+
+                    <p>
+                        Editing video untuk TikTok,
+                        Instagram, YouTube, dan konten lainnya.
+                    </p>
+
+                    <div class="price">
+                        Mulai Rp10.000
+                    </div>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="icon">🎨</div>
+
+                    <h3>Desain</h3>
+
+                    <p>
+                        Desain poster, banner, profil,
+                        dan kebutuhan media sosial.
+                    </p>
+
+                    <div class="price">
+                        Mulai Rp10.000
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="tentang" class="about">
+
+            <div class="title">
+
+                <h2>Tentang Kami</h2>
+
+            </div>
+
+            <div class="about-box">
+
+                <p>
+                    SANZSTORE adalah layanan digital yang
+                    membantu kebutuhan website, editing video,
+                    dan desain dengan harga yang terjangkau.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section id="kontak" class="contact">
+
+            <div class="title">
+
+                <h2>Pesan Sekarang</h2>
+
+                <p>
+                    Klik tombol di bawah untuk menghubungi kami
+                    melalui WhatsApp.
+                </p>
+
+            </div>
+
+            <a
+                class="button"
+                href="https://wa.me/6289698097456"
+                target="_blank"
+            >
+                💬 Chat WhatsApp
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        © 2026 SANZSTORE. All Rights Reserved.
+
+    </footer>
+
+</body>
+  </html>
